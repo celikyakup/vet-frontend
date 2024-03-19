@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { createCustomer } from "../../API/customer";
-import "./CreateCustomer.css";
 import IconSend from "../../assets/icons/IconSend";
 
 const CreateCustomer = ({ getAllCustomers }) => {

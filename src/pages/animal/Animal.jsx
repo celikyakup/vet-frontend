@@ -1,4 +1,3 @@
-import "./Animal.css";
 import {
   getAnimals,
   deleteAnimal,
