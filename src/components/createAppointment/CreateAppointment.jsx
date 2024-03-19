@@ -16,6 +16,7 @@ const CreateAppointment = ({ getAllAppointments, animals, doctors }) => {
     },
   });
   const [errorMessage, setErrorMessage] = useState("");
+
   const handleNewAppointment = (e) => {
     const { name, value } = e.target;
     if (name === "doctor") {
@@ -24,6 +25,14 @@ const CreateAppointment = ({ getAllAppointments, animals, doctors }) => {
       setNewAppointment({ ...newAppointment, animal: { id: value } });
     }
     if (name === "appointmentDate") {
+      const datetimeRegex = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/;
+      if (!datetimeRegex.test(value)) {
+        setErrorMessage(
+          "Lütfen geçerli bir tarih giriniz (gg-aa-yyyy HH:mm formatında)"
+        );
+      } else {
+        setErrorMessage("");
+      }
       setNewAppointment({
         ...newAppointment,
         [name]: value.split("T").join(" "),

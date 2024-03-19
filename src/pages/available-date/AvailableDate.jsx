@@ -86,12 +86,16 @@ const AvailableDate = () => {
           placeholder="Başlangıç Tarihi"
           className="search-input"
           ref={inpoutStartDateRef}
+          min="1000-01-01"
+          max="9999-12-31"
         />
         <input
           type="date"
           placeholder="Bitiş Tarihi"
           className="search-input"
           ref={inputEndDateRef}
+          min="1000-01-01"
+          max="9999-12-31"
         />
         {!inpoutStartDateRef.current?.value ? (
           <button onClick={handleSearch} className="search-button">

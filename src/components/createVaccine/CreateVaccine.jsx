@@ -28,10 +28,15 @@ const CreateVaccine = ({ reports, getAllVaccines }) => {
       setNewVaccine({ ...newVaccine, report: { id: value } });
       setReportId(value);
     } else {
-      setNewVaccine({
-        ...newVaccine,
-        [name]: value,
-      });
+      if (value === "") {
+        setErrorMessage("Boş değer bırakmayınız !!");
+      } else {
+        setNewVaccine({
+          ...newVaccine,
+          [name]: value,
+        });
+        setErrorMessage("");
+      }
     }
   };
   const handleCreate = (e) => {
@@ -88,6 +93,8 @@ const CreateVaccine = ({ reports, getAllVaccines }) => {
               name="protectionStartDate"
               value={newVaccine.protectionStartDate}
               onChange={handleNewVaccine}
+              min="1000-01-01"
+              max="9999-12-31"
             />
           </div>
           <div>
@@ -96,6 +103,8 @@ const CreateVaccine = ({ reports, getAllVaccines }) => {
               name="protectionFinishDate"
               value={newVaccine.protectionFinishDate}
               onChange={handleNewVaccine}
+              min="1000-01-01"
+              max="9999-12-31"
             />
           </div>
           <div>

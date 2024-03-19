@@ -83,6 +83,8 @@ const UpdateVaccine = ({
                   name="protectionStartDate"
                   value={updateVaccine.protectionStartDate}
                   onChange={handleUpdateVaccine}
+                  min="1000-01-01"
+                  max="9999-12-31"
                 />
               </div>
               <div>
@@ -91,6 +93,8 @@ const UpdateVaccine = ({
                   name="protectionFinishDate"
                   value={updateVaccine.protectionFinishDate}
                   onChange={handleUpdateVaccine}
+                  min="1000-01-01"
+                  max="9999-12-31"
                 />
               </div>
               <div>

@@ -46,6 +46,7 @@ td {
   margin: 10px 10px 30px 10px;
   border: #a854f7 1px solid;
   border-radius: 7px;
+  padding-left: 10px;
 }
 
 .create-inputs form {
@@ -91,8 +92,4 @@ select {
 
 select option {
   text-align: center;
-}
-
-input::placeholder {
-  padding-left: 10px;
 }

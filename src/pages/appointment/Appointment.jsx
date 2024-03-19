@@ -105,6 +105,8 @@ const Appointment = () => {
           type="date"
           placeholder="Başlangıç Tarihi"
           name="search-startDate"
+          min="1000-01-01"
+          max="9999-12-31"
           ref={inputStartDateRef}
           className="search-input"
         />
@@ -112,6 +114,8 @@ const Appointment = () => {
           type="date"
           placeholder="Bitiş Tarihi"
           name="search-finishDate"
+          min="1000-01-01"
+          max="9999-12-31"
           ref={inputEndDateRef}
           className="search-input"
         />

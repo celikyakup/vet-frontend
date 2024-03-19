@@ -10,6 +10,7 @@
   width: 100%;
   border: #a854f7 1px solid;
   border-radius: 7px;
+  padding-left: 10px;
 }
 
 .animal-inputs form select {

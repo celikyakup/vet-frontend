@@ -43,6 +43,8 @@ const CreateAvailableDate = ({ getAvailableDates, doctors }) => {
               name="availableDate"
               value={newAvailableDate.availableDate}
               onChange={handleNewDate}
+              min="1000-01-01"
+              max="9999-12-31"
             />
           </div>
           <div>
