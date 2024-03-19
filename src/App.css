@@ -1,0 +1,98 @@
+.default-page {
+  margin: 10px 13.5vw;
+}
+div h2 {
+  margin-bottom: 20px;
+}
+.get-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+table {
+  border: 2px solid #a854f7;
+  width: 100%;
+}
+tr th {
+  height: 5vh !important;
+  text-align: center;
+}
+tr td {
+  height: 3vh !important;
+}
+th {
+  background: #a854f7;
+  color: white;
+  border-bottom: 1px solid black;
+}
+td {
+  text-align: center;
+}
+
+.search-button {
+  background-color: #a854f7;
+  color: white;
+  margin-left: 10px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-input {
+  width: 300px;
+  height: 30px;
+  margin: 10px 10px 30px 10px;
+  border: #a854f7 1px solid;
+  border-radius: 7px;
+}
+
+.create-inputs form {
+  display: flex;
+  flex-direction: column;
+}
+.create-inputs form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-inputs form div input {
+  margin-bottom: 20px;
+  height: 45px;
+  width: 100%;
+  border: #a854f7 1px solid;
+  border-radius: 7px;
+  padding: 0 10px;
+}
+.create-inputs form button {
+  align-self: flex-end;
+  margin: 10px 0 10px 0;
+  padding: 0;
+  height: 35px;
+  width: 300px;
+  background-color: #a854f7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+select {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 15px;
+  border: #a854f7 1px solid;
+  border-radius: 7px;
+}
+
+select option {
+  text-align: center;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}

@@ -1,0 +1,33 @@
+.modal-body .create-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.animals{
+  align-items: center;
+}
+.create-inputs input {
+  margin-bottom: 20px;
+  height: 45px;
+  width: calc(100% - 20px);
+  border: #a854f7 1px solid;
+  border-radius: 7px;
+  padding: 0 10px;
+}
+.create-inputs .animal-select {
+  width: calc(100% - 20px);
+}
+.add-btn {
+  padding: 6px 12px;
+  margin: 4px;
+  height: 38px;
+  width: 120px;
+  background-color: #a854f7;
+  color: white;
+  border: #a854f7 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
