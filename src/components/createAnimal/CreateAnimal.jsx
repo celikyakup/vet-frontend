@@ -16,7 +16,6 @@ const CreateAnimal = ({ getAllAnimals, customers }) => {
       id: "",
     },
   });
-  const [createErrorMessage, setCreateErrorMessage] = useState("");
 
   const handleNewAnimal = (event) => {
     const { name, value } = event.target;
@@ -29,9 +28,7 @@ const CreateAnimal = ({ getAllAnimals, customers }) => {
 
   const handleCreate = (e) => {
     e.preventDefault();
-    createAnimal(newAnimal)
-      .then(() => getAllAnimals())
-      .catch((err) => setCreateErrorMessage(err.response.data.message));
+    createAnimal(newAnimal).then(() => getAllAnimals());
     setNewAnimal({
       name: "",
       species: "",
@@ -89,6 +86,8 @@ const CreateAnimal = ({ getAllAnimals, customers }) => {
             type="date"
             name="dateOfBirth"
             value={newAnimal.dateOfBirth}
+            min="1000-01-01"
+            max="9999-12-31"
             placeholder="Hayvan Doğum Tarihi"
             onChange={handleNewAnimal}
           />
@@ -110,7 +109,6 @@ const CreateAnimal = ({ getAllAnimals, customers }) => {
             Ekle &nbsp; <IconSend />
           </button>
         </form>
-        <div>{createErrorMessage}</div>
       </div>
     </div>
   );
