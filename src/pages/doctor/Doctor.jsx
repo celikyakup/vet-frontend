@@ -50,21 +50,21 @@ const Doctor = () => {
     <div>
       <h2>Doktor Listeleme</h2>
       <input
-          type="text"
-          placeholder="Doktor ismi"
-          name="search"
-          ref={inputRef}
-          className="search-input"
-        />
-        {!inputRef.current?.value ? (
-          <button onClick={handleSearch} className="search-button">
-            Ara
-          </button>
-        ) : (
-          <button onClick={handleSearchClear} className="search-button">
-            Temizle
-          </button>
-        )}
+        type="text"
+        placeholder="Doktor ismi"
+        name="search"
+        ref={inputRef}
+        className="search-input"
+      />
+      {!inputRef.current?.value ? (
+        <button onClick={handleSearch} className="search-button">
+          Ara
+        </button>
+      ) : (
+        <button onClick={handleSearchClear} className="search-button">
+          Temizle
+        </button>
+      )}
       <div className="get-list">
         <table>
           <tbody>

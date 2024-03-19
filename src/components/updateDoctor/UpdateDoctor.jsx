@@ -29,53 +29,53 @@ const UpdateDoctor = ({
         </Modal.Header>
         <Modal.Body>
           <div className="create-inputs">
-          <form>
-          <div>
-            <input
-              type="text"
-              name="name"
-              value={updateDoctor.name}
-              placeholder="Doktor Adı"
-              onChange={handleUpdateDoctor}
-            />
-          </div>
-          <div>
-            <input
-              type="tel"
-              name="phone"
-              value={updateDoctor.phone}
-              placeholder="Telefon Numarası"
-              onChange={handleUpdateDoctor}
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              name="mail"
-              value={updateDoctor.mail}
-              placeholder="Mail"
-              onChange={handleUpdateDoctor}
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="address"
-              value={updateDoctor.address}
-              placeholder="Adres"
-              onChange={handleUpdateDoctor}
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="city"
-              value={updateDoctor.city}
-              placeholder="Doktorun Şehri"
-              onChange={handleUpdateDoctor}
-            />
-          </div>
-        </form>
+            <form>
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  value={updateDoctor.name}
+                  placeholder="Doktor Adı"
+                  onChange={handleUpdateDoctor}
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={updateDoctor.phone}
+                  placeholder="Telefon Numarası"
+                  onChange={handleUpdateDoctor}
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="mail"
+                  value={updateDoctor.mail}
+                  placeholder="Mail"
+                  onChange={handleUpdateDoctor}
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="address"
+                  value={updateDoctor.address}
+                  placeholder="Adres"
+                  onChange={handleUpdateDoctor}
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="city"
+                  value={updateDoctor.city}
+                  placeholder="Doktorun Şehri"
+                  onChange={handleUpdateDoctor}
+                />
+              </div>
+            </form>
           </div>
         </Modal.Body>
         <Modal.Footer>

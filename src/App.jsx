@@ -8,6 +8,7 @@ import Report from "./pages/report/Report";
 import Appointment from "./pages/appointment/Appointment";
 import Navbar from "./components/navbar/Navbar";
 import AvailableDate from "./pages/available-date/AvailableDate";
+import MainPage from "./pages/mainPage/MainPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <div className="default-page">
         <Routes>
+          <Route path="" element={<MainPage />} />
           <Route path="/animal" element={<Animal />} />
           <Route path="/customer" element={<Customer />} />
           <Route path="/doctor" element={<Doctor />} />
